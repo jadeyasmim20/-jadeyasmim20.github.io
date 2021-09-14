@@ -1,0 +1,321 @@
+
+  /* Banner corta página */
+  .bannerQuizAtravessado{
+    width: 110%;
+    max-height: 150px ;
+    margin-top: 5vh ;
+    margin-bottom: 5vh ;
+
+  
+  }
+
+  /* Card Quiz Inicial */
+  
+
+.cardQuiz {
+    position: relative;
+    /* height: 400px; */
+    width: 100vh;
+    border: none;
+    outline: none;
+    color:#b82222 ;
+    background: #f2f2f2;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif
+}
+
+.cardQuiz:before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    filter: blur(5px);
+    background: linear-gradient(45deg, #ffe676, #f4ff5c, #ffbd42, #FF3F29, #E80F0F, #FF9E76, #FF7F5C, #FF6042);
+    background-size: 400%;
+    transition: opacity .3s ease-in-out;
+    animation: animate 20s linear infinite
+}
+
+.cardQuiz:hover:before {
+    opacity: 1
+}
+
+.cardQuiz:hover:active {
+    background: none
+}
+
+.cardQuiz:hover:active:before {
+    filter: blur(2px)
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 400% 0
+    }
+
+    100% {
+        background-position: 0 0
+
+        
+    }
+}
+@media (max-width: 990px) {
+  .cardQuiz {
+      width: 800px;
+      min-height: 30px   
+  }
+}
+@media (max-width: 800px) {
+  .cardQuiz {
+      width: 600px;
+      min-height: 30px   
+  }
+}
+@media (max-width: 600px) {
+  .cardQuiz {
+      width: 400px;
+      min-height: 30px   
+  }
+}
+
+@media (max-width: 400px) {
+  .cardQuiz {
+       width: 300px;
+      min-height: 30px   
+  }
+}
+/* Página Principal Logado */
+
+
+.container-fluid .title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff2222;
+  padding-top: 1em;
+}
+
+.container-fluid .userPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-fluid .board {
+  justify-content: space-evenly;
+  background-color: white;
+  text-align: center;
+
+  box-shadow: 15px;
+}
+
+.imageUser{
+  width: 10vw;
+}
+
+.container-fluid .userPage .board #pontos{
+  color: white;
+  background-color: #8f8f8f;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+/* Fim página principal logado */
+
+/* Regras do Jogo */
+
+.container {
+  width: 700px;
+  min-height: 400px
+}
+
+.container .card {
+  top: calc(50% - 190px);
+  background-image: url("../imagens/quiz-img2.png");
+  background-size: contain;
+  background-repeat: repeat-y;
+  left: 50%;
+  transform: translate(-50%, calc(50px*var(--i))) rotate(40deg) skew(-20deg, -10deg);
+  width: 260px;
+  height: 380px;
+  border: none;
+  box-shadow: 0 5px 12px #1111112d;
+  z-index: calc(-1 * var(--i));
+  transition: all 0.5s
+}
+
+.container .card:nth-child(1) {
+  opacity: 0.9
+}
+
+.container .card:nth-child(2) {
+  opacity: 0.8
+}
+
+.container .card:nth-child(3) {
+  opacity: 0.5
+}
+
+.container:hover .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + calc(300px * var(--i))), -50%) rotate(0deg) skew(0deg, 0deg);
+  opacity: 1;
+  z-index: 1
+}
+
+.container .card .cardbody {
+  color: #444;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(50px);
+  padding: 25px;
+  pointer-events: none
+}
+
+.container:hover .card .cardbody {
+  opacity: 1;
+  transform: translateY(0px)
+}
+
+.cardbody{
+  background-color: #444;
+  width: 260px;
+  height: 380px;
+  font-weight: 500;
+  font-size: larger;
+
+}
+
+
+@media(max-width: 991.5px) {
+  .container:hover .card {
+    display: none;
+  }
+
+
+}
+
+@media (max-width:576px) {
+  .container {
+    display: none;
+  }
+
+  .container .card {
+    display: none;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .container {
+      /* width: 100px;
+      min-height: 300px */
+      display: none;
+      
+  }
+
+  .container .card {
+      /* width: 150px;
+      height: 180px */
+      display: none;
+      
+  }
+
+  .container:hover .card {
+      /* width: 260px;
+      height: 280px;
+      transform: translate(-50%, calc(-50% + calc(320px * var(--j)))) rotate(0deg) skew(0deg, 0deg) */
+      display: none;
+  }
+}
+
+@media (min-width: 991.5px) {
+  .regrasCel{
+    display: none;
+  }
+}
+
+/* CARS 3D -------------------------------------- */
+
+.container3D {
+    transform-style: preserve-3d
+}
+
+.container3D .box {
+    position: relative;
+    width: 300px;
+    height: 360px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer
+}
+
+.container3D .box .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease
+}
+
+.container3D .box .body .imgContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d
+}
+
+.container3D .box .body .imgContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.container3D .box .body .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg)
+}
+
+.container3D .box:hover .body {
+    transform: rotateY(180deg)
+}
+
+.container3D .box .body .content div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #FE0061, #FFEB3B);
+    transform: translateZ(100px)
+}
+
+.container3D .box .body .content div h3 {
+    letter-spacing: 1px
+}
+
+/* MULTIPLE CHOICE CARDS QUIZ */

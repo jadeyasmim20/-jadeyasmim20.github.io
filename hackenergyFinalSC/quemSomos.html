@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./imagens/favicon.ico">
+
+  <!-- css blibliotecas -->
+  <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+
+  <!-- css locais -->
+
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/headerFooter.css">
+
+  <title>Hack Energy</title>
+</head>
+
+<body>
+  <!--Cabeçalho-->
+  <header class="container-fluid fixed-top">
+
+    <section class="d-flex justify-content-between align-items-center">
+      <section>
+        <section class="row">
+          <a href="./index.html"><img class="rounded-circle mr-4" id="logoEmpresa" src="imagens/logo1.jpeg" alt="Logo"/></a>
+        </section>
+      </section>
+      <!-- Menu -->
+      <section>
+        <nav class="navbar navbar-expand-md col-12  ">
+          <button class="navbar-toggler  btn-outline-danger" type="button" data-toggle="collapse"
+            data-target="#navegacao" aria-controls="navegacao" aria-expanded="false" aria-label="Alterna navegação">
+            --- <br> --- <br> --- </button>
+          <!-- NAVBAR -->
+          <div class="navbar-collapse collapse navbar-expand-md justify-content-md-around  " id="navegacao">
+            <ul class="navbar-nav ">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html"><i class="fa fa-fw fa-home"></i>Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">                  
+                <a class="nav-link" href="./quemSomos.html"><i class="fa fa-fw fa-address-card"></i> Quem somos <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recicle.html"><i class="fa fa-leaf"></i> Cultura do Bem <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./informacoes.html"><i class="fa fa-laptop"></i> Informações <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cadastro.html"><i class="fa fa-list"></i> Cadastro <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html"><i class="fa fa-desktop"></i> Login<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+      <section>
+        <section class="d-flex flex-row">
+          <section id="escuroClaro">
+            <img id="darkmode" src="imagens/dark mode.jpg" alt="Modo noturno" />
+          </section>
+          <section id="lupaAumenta">
+            <img id="letra_aumenta" src="imagens/lupa aumenta.jpg" alt="Aumenta" />
+          </section>
+          <section id="lupaDiminui">
+            <img id="letra_diminui" src="imagens/lupa diminui.jpg" alt="Diminui" />
+          </section>
+        </section>
+      </section>
+    </section>
+  </header>
+
+  <br />
+  <br />
+
+  <!--Inicio MEIO-->
+  <main class="mt-5 py-5">
+    <!-- Banner -->
+    <section class="container" id="mainSection" >
+      <img
+        src="imagens/logo2.jpeg"
+        alt="Banner sustentabilidade"
+        class="img-fluid"
+        id="imgBanerPrincipal"
+      />
+
+    <!-- Conteudo  -->
+    <section class="row-12 container" id="mainSection">
+      <section class="col-lg-10">
+        <section id="sobreNosMain">
+          <h1 class="pt-5">Quem Somos</h1>
+          <br />
+          <p>
+            Somos o HackEnergy um jovem grupo de profissionais de tecnologia entusiasmados em promover a cultura do
+            desenvolvimento sustentável por meio de tecnologia, de acessibilidade e de diversão. Destemidos e
+            dispostos, encaramos os desafios com energia e ânimo para tornar o mundo um lugar mais amigável com o meio
+            ambiente.
+          </p>
+          <section class="container img-responsive">
+            <img id="imagemCadastro" src="./imagens/quemSomos.jpeg" class="img-fluid rounded mx-auto d-block"
+              alt="Desenho" />
+          </section>
+          <br />
+          <h2>Missão</h2>
+          <p>
+            Batalhar para oferecer um Brasil mais sustentável, proporcionando uma rede de contato entre nossos
+            consumidores e pontos de coleta, informando sobre a importância e os benefícios da reciclagem e gerando
+            prosperidade para sociedade pelas práticas de ASG.
+          </p>
+          <section class="container img-responsive">
+            <img id="imagemMissao" src="./imagens/missao.jpeg" class="img-fluid rounded mx-auto d-block"
+              alt="Desenho" />
+          </section>
+          <br />
+          <h2>Visão</h2>
+          <p>
+            Impactar todo o território nacional com sustentabilidade, levando educação, informação e diversão.
+          </p>
+          <section class="container img-responsive">
+            <img id="imagemVisao" src="./imagens/visao.jpeg" class="img-fluid rounded mx-auto d-block" alt="Desenho" />
+            <br />
+            <h2>Valores</h2>
+            <p>Sustentabilidade;</p>
+            <p>Comprometimento;</p>
+            <p>Diversidade;</p>
+            <p>Integridade;</p>
+            <p>Respeito;</p>
+            <img id="imagemValores" src="./imagens/valores.jpeg" class="img-fluid rounded mx-auto d-block"
+              alt="Desenho" />
+            <h1><em>ASG</em></h1>
+            <p>
+              ASG é a sigla para Ambiental, Social e Governança ou, como é conhecida internacionalmente, ESG
+              (Environmental, Social and Governance), representa um conjunto de valores e critérios éticos que uma
+              companhia desenvolve como objetivo melhorar o seu relacionamento com o meio ambiente e com a sociedade.
+              Dessa forma, o ASG está ligado a processos de uma empresa que tem por finalidade ter uma melhor
+              governança nos campos citados .
+            </p>
+            <section class="container img-responsive mb-5">
+              <img id="imagemASG" src="./imagens/asg.png" class="img-fluid rounded mx-auto d-block" alt="Desenho" />
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+
+
+   <!--CARDS MAIN Quem somos-->
+   <div class="containerCard">
+    <div class="row">
+      <div class="col-md-4 mb-md-2">
+        <div
+          class="
+            card 
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              inner-content
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div class="img-container rounded-circle">
+              <img
+                src="./imagens/bruno.jpeg"
+                alt="Bruno"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="h3">Bruno Drumond</div>
+            <p class="designation text-muted text-uppercase">
+              Engenharo de Dados
+            </p>
+          </div>
+          <ul
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-around
+              list-unstyled
+              w-100
+              fs-5
+              m-0
+              p-0
+            "
+          >
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/BrunoDrumondVilela" target="_blank"><span class="fab fa-git-square"></span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/bruno-drumond-vilela-166562216/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb-md-2">
+        <div
+          class="
+            card 
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              inner-content
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div class="img-container rounded-circle">
+              <img
+                src="./imagens/jadesc.jpg"
+                alt="Foto Jade"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="h3">Jade Oliveira</div>
+            <p class="designation text-muted text-uppercase">
+              Full Stack Developer
+            </p>
+          </div>
+          <ul
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-around
+              list-unstyled
+              w-100
+              fs-5
+              m-0
+              p-0
+            "
+          >
+            <li>
+              <a href="https://www.facebook.com/jade.oliveira.3139" target="_blank"><span class="fab fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jadeyasmim20/" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/jadeyasmim20" target="_blank"><span class="fab fa-git-square"></span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/jade-yasmim-oliveira-11a07324/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb-md-2">
+        <div
+          class="
+            card 
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              inner-content
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div class="img-container rounded-circle">
+              <img
+                src="./imagens/Juliana.jfif"
+                alt="Juliana"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="h3">Juliana Fabricio</div>
+            <p class="designation text-muted text-uppercase">
+              Software Engineer
+            </p>
+          </div>
+          <ul
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-around
+              list-unstyled
+              w-100
+              fs-5
+              m-0
+              p-0
+            "
+          >
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/JuFaro" target="_blank"><span class="fab fa-git-square"></span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/juliana-fabricio-rodrigues/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb-md-2">
+        <div
+          class="
+            card 
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              inner-content
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div class="img-container rounded-circle">
+              <img
+                src="./imagens/maira.jpeg"
+                alt="Maira"
+                class="rounded-circle"
+              />
+            </div>
+
+            <div class="h3">Maira Monteiro</div>
+            <p class="designation text-muted text-uppercase">
+              Engenhara de Dados
+            </p>
+          </div>
+          <ul
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-around
+              list-unstyled
+              w-100
+              fs-5
+              m-0
+              p-0
+            "
+          >
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/MairaMonteiro" target="_blank"><span class="fab fa-git-square"></span></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/maira-monteiro" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 mb-md-2">
+        <div
+          class="
+            card 
+            d-flex
+            flex-column
+            align-items-center
+            justify-content-center
+          "
+        >
+          <div
+            class="
+              inner-content
+              d-flex
+              flex-column
+              align-items-center
+              justify-content-center
+            "
+          >
+            <div class="img-container rounded-circle">
+              <img
+                src="./imagens/victor.jpeg"
+                alt="Victor"
+                class="rounded-circle"
+              />
+            </div>
+            <div class="h3">Victor Gonçalves</div>
+            <p class="designation text-muted text-uppercase">
+              Engenharo de Dados
+            </p>
+          </div>
+          <ul
+            class="
+              social-links
+              d-flex
+              align-items-center
+              justify-content-around
+              list-unstyled
+              w-100
+              fs-5
+              m-0
+              p-0
+            "
+          >
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-facebook"></span></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://github.com/victorog17" target="_blank"><span class="fab fa-git-square"></span></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/victor-de-oliveira-goncalves/" target="_blank"><span class="fab fa-linkedin-in"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    <p>&copy;Todos os direitos reservados ao Hack Energy</p>
+    <div>
+      <a href="https://www.instagram.com/grupo.petropolis/" target="_blank"><img class="img_footer"
+          src="imagens/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/grupo.petropolis/" target="_blank"><img class="img_footer"
+          src="imagens/facebook.png" alt="_blank" /></a>
+      <a href="https://www.linkedin.com/company/grupo-petropolis/" target="_blank"><i class="bi bi-linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="img_footer text-dangerbi bi-linkedin"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+          </svg> </i></a>
+      <a href="https://www.youtube.com/user/ItaipavaPilsen" target="_blank"><i class="bi bi-youtube">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="img_footer text-danger bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+          </svg> </i></a>
+
+      <a href="https://www.grupopetropolis.com.br/sustentabilidade/politica-de-meio-ambiente/" target="_blank"><img
+          class="rounded-circle img_footer" src="imagens/gp.png" alt="Grupo Petrópolis" /></a>
+    </div>
+    <span id="data"></span>
+    <a href="#"><img id="imageFooter" src="imagens/top.jpg" alt="Voltar para o top" /></a>
+  </footer>
+
+  <!-- js local -->
+  <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+
+
+  <!-- bibliotecas -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+
+  <!-- Libras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>
